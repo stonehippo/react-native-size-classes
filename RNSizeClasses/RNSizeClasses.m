@@ -57,9 +57,20 @@ RCT_EXPORT_MODULE();
     return [[[[UIApplication sharedApplication] keyWindow] traitCollection] userInterfaceIdiom] == UIUserInterfaceIdiomPad;
 }
 
-RCT_REMAP_METHOD(getSizeClasses, sizeClasses:(RCTResponseSenderBlock)callback)
+RCT_REMAP_METHOD(getSizeClasses,
+                 getSizeClassesWithResolver:(RCTPromiseResolveBlock)resolve
+                 rejecter: (RCTPromiseRejectBlock)reject)
 {
-    callback(@[@(self.verticalSizeClass), @(self.horizontalSizeClass)]);
+    NSDictionary *sizeClasses = @{
+                                  @"vertical": self.verticalSizeClass,
+                                  @"horizontal": self.horizontalSizeClass
+                                  };
+    if(sizeClasses) {
+        resolve(sizeClasses);
+    } else {
+        NSError *error = nil;
+        reject(@"no_size_classes",@"Size Classes not available", error);
+    }
 }
 
 - (NSDictionary *)constantsToExport

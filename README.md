@@ -42,16 +42,12 @@ The API currently supports iOS only. You'll probably want to wrap calls in `Plat
 
 ### getSizeClasses()
 
-Uses the `UIWindow` to return values for `vertialSizeClass` and `horizontalSizeClass` for the overall app.
+Uses the `UIWindow` to return a Promise that resolves values for `vertialSizeClass` and `horizontalSizeClass` for the overall app.
 
 #### Examples
 
 ```
-SizeClasses.getClassSizes((vertical, horizontal) => {
-    if (vertical === "compact") {
-        ...
-    }
-})
+SizeClasses.getClassSizes().then((sc) => console.log(sc.vertical))
 ```
 
 ---

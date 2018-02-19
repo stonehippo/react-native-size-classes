@@ -1,8 +1,6 @@
 // @flow
 
 declare module.export: {
-    sizeClasses: () => (
-        callback: (vSizeClass: string, hSizeClass: string) => void
-    )
+    getSizeClasses: () => Promise<any>;
     isIpad: () => boolean
 }

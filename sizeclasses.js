@@ -7,6 +7,6 @@ import { NativeModules } from 'react-native';
 const RNSizeClasses = NativeModules.RNSizeClasses;
 
  module.exports = {
-     getSizeClasses: () => RNSizeClasses.getSizeClasses,
+     getSizeClasses: RNSizeClasses.getSizeClasses,
      isIpad: () => RNSizeClasses.isIpad,
  }
