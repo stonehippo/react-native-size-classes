@@ -1,0 +1,18 @@
+{
+    "name": "react-native-size-classes",
+    "version": "0.1.0",
+    "description": "iOS Size Classes for use with React Native",
+    "main": "sizeclasses.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/stonehipppo/react-native-size-classes"
+    },
+    "author": "George White <stonehippo@gmail.com> (https://github.com/stonehippo)",
+    "license": "MIT",
+    "devDependencies": {
+        
+    },
+    "dependencies": {
+        
+    }
+}
