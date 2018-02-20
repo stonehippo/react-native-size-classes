@@ -11,7 +11,7 @@ let getSizeClasses, isIpad;
 if (Platform.OS === 'ios') {
   const RNSizeClasses = NativeModules.RNSizeClasses;
 
-  getSizeClasses: RNSizeClasses.getSizeClasses;
+  getSizeClasses = RNSizeClasses.getSizeClasses;
   isIpad = () => RNSizeClasses.isIpad;
 }
 
