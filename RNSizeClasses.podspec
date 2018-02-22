@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name          = "RNSizeClasses"
-    s.version       = "0.2.0"
+    s.version       = "0.2.1"
     s.summary       = "iOS Size Classes for use with React Native"
 
     s.homepage      = ""
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = "9.0"
     s.tvos.deployment_target = "10.0"
 
-    s.source        = { :git => "https://github.com/stonehipppo/react-native-size-classes" }
+    s.source        = { :git => "https://github.com/stonehippo/react-native-size-classes" }
     s.source_files  = "RNSizeClasses/*.{h,m}"
 
     s.dependency    = "React"
