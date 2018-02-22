@@ -47,7 +47,7 @@ Uses the `UIWindow` to return a Promise that resolves values for `vertialSizeCla
 #### Examples
 
 ```
-SizeClasses.getClassSizes().then((sc) => console.log(sc.vertical))
+SizeClasses.getSizeClasses().then((sc) => console.log(sc.vertical))
 ```
 
 ---
