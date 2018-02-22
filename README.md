@@ -1,6 +1,6 @@
 # react-native-size-classes
 
-Get the `UIWindow` values for `UITraitCollection` vertical and horizontal size classes.
+Get the UIKit `UIWindow` values for `UITraitCollection` vertical and horizontal size classes in iOS. Safe for Android (it's a no-op).
 
 ## Installation
 
