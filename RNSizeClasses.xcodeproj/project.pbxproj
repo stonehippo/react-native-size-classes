@@ -102,7 +102,7 @@
 				};
 			};
 			buildConfigurationList = 5E326B2C2037423500D2D9AC /* Build configuration list for PBXProject "RNSizeClasses" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
